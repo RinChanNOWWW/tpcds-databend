@@ -1,10 +1,10 @@
 select  *
  from(select w_warehouse_name
             ,i_item_id
-            ,sum(case when (d_date as date) < cast ('1999-03-20'::date)
+            ,sum(case when d_date::date < '1999-03-20'::date
 	                then inv_quantity_on_hand 
                       else 0 end) as inv_before
-            ,sum(case when (d_date as date) >= cast ('1999-03-20'::date)
+            ,sum(case when d_date::date >= '1999-03-20'::date
                       then inv_quantity_on_hand 
                       else 0 end) as inv_after
    from inventory
