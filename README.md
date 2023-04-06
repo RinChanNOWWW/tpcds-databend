@@ -12,7 +12,7 @@ shell> duckdb tpcds.db
 duckdb> INSTALL tpcds;
 duckdb> LOAD tpcds;
 duckdb> SELECT * FROM dsdgen(sf=0.01);
-duckdb> EXPORT '/tmp/tpcds_0_01/' (FORMAT CSV, DELIMITER '|');
+duckdb> EXPORT DATABASE '/tmp/tpcds_0_01/' (FORMAT CSV, DELIMITER '|');
 
 shell> mv /tmp/tpcds_0_01/ "$(pwd)/data/"
 ```
