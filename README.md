@@ -1,5 +1,11 @@
 # TPC-DS for Databend
 
+**=======THIS REPO IS ARCHIVED=======**
+
+The contents of this repo have been moved to https://github.com/datafuselabs/databend/tree/main/benchmark/tpcds
+
+**=======THIS REPO IS ARCHIVED=======**
+
 ## Data and queries generation
 
 Use DuckDB to generate data and queries.
